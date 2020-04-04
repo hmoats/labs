@@ -1,7 +1,7 @@
 # labs
 
 ```
-labs
+labs/
 ├── BigSwitch-Simple-3-Tenant-Design
 │   ├── Simple-3-tenant-design-lab.cfg
 │   ├── Simple-3-tenant-design-lab.md
@@ -9,6 +9,12 @@ labs
 ├── Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs
 │   ├── Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md
 │   └── Enterprise-Site-to-Site-VPN-with-ASA-VTIs.PNG
+├── Cisco-Resilient-Enterprise-Firewall-Edge
+│   ├── Resilient-Enterprise-Firewall-Edge.md
+│   └── Resilient-Enterprise-Firewall-Edge.PNG
+├── Cisco-Resilient-Enterprise-Router-Edge
+│   ├── Resilient-Enterprise-Router-Edge.md
+│   └── Resilient-Enterprise-Router-Edge.PNG
 └── README.md
 ```
 
