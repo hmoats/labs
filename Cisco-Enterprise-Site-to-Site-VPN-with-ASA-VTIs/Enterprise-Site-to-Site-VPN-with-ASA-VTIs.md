@@ -10,7 +10,7 @@ In this recipe, we enable a resilent enterprise site to site VPN solution using 
 
 ## Topology
 
-![alt text]({{ site.baseurl }}/docs/Cisco/Enterprise-Site-to-Site-VPN-with-ASA-VTIs.PNG "Lab Topology")
+![alt text](Enterprise-Site-to-Site-VPN-with-ASA-VTIs.PNG "Lab Topology")
 
 **Debugging the events in the failure scenario**
 
