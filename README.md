@@ -21,3 +21,5 @@ labs
 ### [Enterprise Site to Site VPN with ASA VTIs](/Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs/Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md)
 
 ### [Resilient Enterprise Firewall Edge](/Cisco-Resilient-Enterprise-Firewall-Edge/Resilient-Enterprise-Firewall-Edge.md)
+
+### [Resilient Enterprise Router Edge](/Cisco-Resilient-Enterprise-Router-Edge/Resilient-Enterprise-Router-Edge.md)
