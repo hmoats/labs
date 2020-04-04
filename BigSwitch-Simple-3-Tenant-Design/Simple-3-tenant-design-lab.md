@@ -28,7 +28,7 @@ In this lab we build a simple design with the following hierarchy
 
 ## Topology
 
-![Topology](/Simple-3-tenant-design-lab.PNG)
+![Topology](Simple-3-tenant-design-lab.PNG)
 
 ## Configuration
 
