@@ -29,3 +29,7 @@ labs/
 ### [Resilient Enterprise Firewall Edge](/Cisco-Resilient-Enterprise-Firewall-Edge/Resilient-Enterprise-Firewall-Edge.md)
 
 ### [Resilient Enterprise Router Edge](/Cisco-Resilient-Enterprise-Router-Edge/Resilient-Enterprise-Router-Edge.md)
+
+## kops
+
+### [Deploying kubernetes on AWS using kops](Deploying-kubernetes-on-AWS-using-kops.md)
