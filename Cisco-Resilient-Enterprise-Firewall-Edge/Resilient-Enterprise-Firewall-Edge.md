@@ -6,7 +6,7 @@ In this recipe, we enable a resilent enterprise edge using a firewall (Cisco ASA
 
 ## Topology
 
-![alt text]({{ site.baseurl }}Resilient-Enterprise-Firewall-Edge.PNG "Enterprise Firewall Edge")
+![alt text](Resilient-Enterprise-Firewall-Edge.PNG "Enterprise Firewall Edge")
 
 **Debugging the events in the failure scenario**
 
