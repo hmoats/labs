@@ -16,4 +16,4 @@ labs/
 
 ## Cisco
 
-### [Enterprise Site to Site VPN with ASA VTIs](/Enterprise-Site-to-Site-VPN-with-ASA-VTIs/Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md)
+### [Enterprise Site to Site VPN with ASA VTIs](/Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs/Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md)
