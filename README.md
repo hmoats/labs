@@ -15,6 +15,7 @@ labs/
 ├── Cisco-Resilient-Enterprise-Router-Edge
 │   ├── Resilient-Enterprise-Router-Edge.md
 │   └── Resilient-Enterprise-Router-Edge.PNG
+├── Deploying-kubernetes-on-AWS-using-kops.md
 └── README.md
 ```
 
