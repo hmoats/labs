@@ -21,7 +21,7 @@ labs/
 
 ## BigSwitch
 
-### [Simple 3 Tenant Design](/BigSwitch-Simple-3-Tenant-Design/Simple-3-tenant-design-lab.md)
+### [Simple 3 Tenant Design](/BigSwitch-Simple-3-Tenant-Design/README.md)
 
 ## Cisco
 
