@@ -3,17 +3,17 @@
 ```
 labs/
 ├── BigSwitch-Simple-3-Tenant-Design
+│   ├── README.md
 │   ├── Simple-3-tenant-design-lab.cfg
-│   ├── Simple-3-tenant-design-lab.md
 │   └── Simple-3-tenant-design-lab.PNG
 ├── Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs
-│   ├── Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md
-│   └── Enterprise-Site-to-Site-VPN-with-ASA-VTIs.PNG
+│   ├── Enterprise-Site-to-Site-VPN-with-ASA-VTIs.PNG
+│   └── README.md
 ├── Cisco-Resilient-Enterprise-Firewall-Edge
-│   ├── Resilient-Enterprise-Firewall-Edge.md
+│   ├── README.md
 │   └── Resilient-Enterprise-Firewall-Edge.PNG
 ├── Cisco-Resilient-Enterprise-Router-Edge
-│   ├── Resilient-Enterprise-Router-Edge.md
+│   ├── README.md
 │   └── Resilient-Enterprise-Router-Edge.PNG
 ├── Deploying-kubernetes-on-AWS-using-kops.md
 └── README.md
@@ -25,11 +25,11 @@ labs/
 
 ## Cisco
 
-### [Enterprise Site to Site VPN with ASA VTIs](/Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs/Enterprise-Site-to-Site-VPN-with-ASA-VTIs.md)
+### [Enterprise Site to Site VPN with ASA VTIs](/Cisco-Enterprise-Site-to-Site-VPN-with-ASA-VTIs/README.md)
 
-### [Resilient Enterprise Firewall Edge](/Cisco-Resilient-Enterprise-Firewall-Edge/Resilient-Enterprise-Firewall-Edge.md)
+### [Resilient Enterprise Firewall Edge](/Cisco-Resilient-Enterprise-Firewall-Edge/README.md)
 
-### [Resilient Enterprise Router Edge](/Cisco-Resilient-Enterprise-Router-Edge/Resilient-Enterprise-Router-Edge.md)
+### [Resilient Enterprise Router Edge](/Cisco-Resilient-Enterprise-Router-Edge/README.md)
 
 ## kops
 
