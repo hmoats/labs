@@ -15,8 +15,19 @@ labs/
 ├── Cisco-Resilient-Enterprise-Router-Edge
 │   ├── README.md
 │   └── Resilient-Enterprise-Router-Edge.PNG
+├── Cisco-Resilient-LAN
+│   ├── Cisco-Resilient-LAN.PNG
+│   ├── Cisco-Resilient-LAN-Results.PNG
+│   ├── inventory
+│   │   └── hosts
+│   ├── iosvl2-1.cfg
+│   ├── iosvl2-2.cfg
+│   ├── iosvl2-3.cfg
+│   ├── README.md
+│   └── run.yml
 ├── Deploying-kubernetes-on-AWS-using-kops.md
 └── README.md
+
 ```
 
 ## BigSwitch
@@ -30,6 +41,8 @@ labs/
 ### [Resilient Enterprise Firewall Edge](/Cisco-Resilient-Enterprise-Firewall-Edge/README.md)
 
 ### [Resilient Enterprise Router Edge](/Cisco-Resilient-Enterprise-Router-Edge/README.md)
+
+### [Resilient LAN](/Cisco-Resilient-LAN/README.md)
 
 ## kops
 
