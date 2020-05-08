@@ -1,0 +1,27 @@
+- name: Cisco IOS Backup
+  hosts: switches
+  connection: local
+  gather_facts: false
+  vars:
+    cli:
+      username: hmoats
+      password: cisco
+      authorize: yes
+      auth_pass: cisco
+      timeout: 30
+  tasks:
+    - debug:
+        msg: "Starting {{ inventory_hostname }}"
+    - name: Show running-config
+      ios_command:
+        commands:
+          - show running-config
+        provider: "{{ cli }}"
+      register: config
+
+    - name: Saving show running-config
+      copy:
+        content: "{{ config.stdout[0] }}\n"
+        dest: "{{ inventory_hostname }}.cfg"
+
+#    - debug: var=config
