@@ -26,6 +26,6 @@ In the screen shot, we see that we shutdown the link between `iosvl2-1` and `ios
 
 ## Configurations
 
-* [iosvl2-1](./iosvl2-1.cfg)
-* [iosvl2-2](./iosvl2-2.cfg)
-* [iosvl2-3](./iosvl2-3.cfg)
+* [iosvl2-1](./config/iosvl2-1.cfg)
+* [iosvl2-2](./config/iosvl2-2.cfg)
+* [iosvl2-3](./config/iosvl2-3.cfg)
