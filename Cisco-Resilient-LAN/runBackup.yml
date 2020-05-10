@@ -22,6 +22,6 @@
     - name: Saving show running-config
       copy:
         content: "{{ config.stdout[0] }}\n"
-        dest: "{{ inventory_hostname }}.cfg"
+        dest: "config/{{ inventory_hostname }}.cfg"
 
 #    - debug: var=config

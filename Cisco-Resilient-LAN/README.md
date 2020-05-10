@@ -13,7 +13,7 @@ Simple design that shows the use of rapid spanning-tree and the appropriate conf
 
 ![alt text](Cisco-Resilient-LAN.PNG "Lab Topology")
 
-## Recipe
+## Configuration
 
 * The global command `spanning-tree mode rapid-pvst` on every switch in the fabric enabled rapid spanning tree.
 * The port command `spanning-tree portfast edge` on every edge port or you can enable the global command `spanning-tree portfast edge default`.

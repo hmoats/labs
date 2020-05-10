@@ -1,5 +1,5 @@
 [switches]
-iosvl2-1 ansible_host=172.16.1.101
-iosvl2-2 ansible_host=172.16.1.102
-iosvl2-3 ansible_host=172.16.1.103
+iosvl2-1 ansible_host=172.16.1.101 l2role=primary
+iosvl2-2 ansible_host=172.16.1.102 l2role=secondary
+iosvl2-3 ansible_host=172.16.1.103 l2role=default
 

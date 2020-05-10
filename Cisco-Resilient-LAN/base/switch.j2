@@ -1,0 +1,83 @@
+!
+! Show copious timestamps in our logs
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+!
+! let's encrypt password in the configurations
+service password-encryption
+no service dhcp
+!
+logging buffered 16384
+no logging console
+!
+! This is a temporary user to do install base configs. Please
+! change this to whatever your environment supports, e.g., 
+! tacacs, ssh keys, etc.
+username hmoats secret 5 $1$ePHU$RjpJEMefMImrafeRQz..j0
+aaa new-model
+!
+! Disable some annoying services (some are disabld by default)
+no ip source-route
+no ip bootp server
+no ip domain-lookup
+!
+! We need to set the domain to generate SSH keys. This assumes
+! you already have ssh enabled to perform this base configuration.
+ip domain-name example.com
+ip cef
+login on-failure log
+login on-success log
+!
+! We need an infrastructure access list for the management
+! interface.
+ip access-list extended mgmt-in
+ permit tcp 172.16.1.0 0.0.0.255 any eq 22
+ deny   ip any any log
+!
+! Let's make sure we are archiving our config locally just
+! in case we need to rollback. Also, send to syslog enable
+! changes for audit.
+archive
+archive
+ log config
+  logging enable
+  logging size 500
+  notify syslog contenttype plaintext
+  hidekeys
+ path flash:config
+ maximum 14
+ write-memory
+!
+! The device should give us a hint as to their role in the 
+! the switching fabric
+spanning-tree mode rapid-pvst
+spanning-tree portfast edge bpduguard default
+spanning-tree extend system-id
+!
+{% if l2role == 'primary' %}
+spanning-tree vlan 1-4094 priority 4096
+{% elif l2role == 'secondary' %}
+spanning-tree vlan 1-4094 priority 8192
+{% else %}
+spanning-tree vlan 1-4094 priority 32768
+{% endif %}
+!
+ip ssh version 2
+!
+no ip http server
+!
+line con 0
+ exec-timeout 15 0
+line aux 0
+ exec-timeout 15 0
+line vty 0 4
+ access-class mgmt in
+ exec-timeout 15 0
+ transport input ssh
+!
+vlan 10
+ name web
+vlan 20
+ name app
+vlan 30
+ name db

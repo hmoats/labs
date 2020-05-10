@@ -1,0 +1,76 @@
+---
+- name: Switch config
+  connection: local
+  hosts: switches
+  gather_facts: no
+  vars:
+    cli:
+      username: hmoats
+      password: cisco
+      authorize: yes
+      auth_pass: cisco
+      timeout: 30
+  tags: ['switches']
+
+  tasks:
+    - name: Gather all legacy facts
+      ios_facts:
+        gather_subset: all
+        provider: "{{ cli }}"
+
+    - name: Configure base
+      ios_config:
+        src: base/switch.j2
+        provider: "{{ cli }}"
+        defaults: yes
+        save_when: changed
+      register: ios_output
+
+    - name: Configure the login banner
+      ios_banner:
+        banner: login
+        text: |
+          ##############################################################
+          # UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED           #
+          # You must have explicit, authorized permission to access or #
+          # configure this device. Unauthorized attempts and actions   #
+          # to access or use this system may result in civil and/or    #
+          # criminal penalties.                                        #
+          ##############################################################
+        provider: "{{ cli }}"
+        state: present
+
+    - name: Configure the exec banner
+      ios_banner:
+        banner: exec
+        text: |
+          ##############################################################
+          # UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED           #
+          # You must have explicit, authorized permission to access or #
+          # configure this device. Unauthorized attempts and actions   #
+          # to access or use this system may result in civil and/or    #
+          # criminal penalties.                                        #
+          ##############################################################
+        provider: "{{ cli }}"
+        state: present
+
+    - name: Configure the incoming banner
+      ios_banner:
+        banner: incoming
+        text: |
+          ##############################################################
+          # UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED           #
+          # You must have explicit, authorized permission to access or #
+          # configure this device. Unauthorized attempts and actions   #
+          # to access or use this system may result in civil and/or    #
+          # criminal penalties.                                        #
+          ##############################################################
+        provider: "{{ cli }}"
+        state: present
+
+    - name: DEBUG
+      debug:
+        msg: "{{ item }}"
+      with_items:
+        - "{{ ios_output }}"
+
