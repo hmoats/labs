@@ -16,15 +16,19 @@ labs/
 │   ├── README.md
 │   └── Resilient-Enterprise-Router-Edge.PNG
 ├── Cisco-Resilient-LAN
+│   ├── base
+│   │   └── switch.j2
 │   ├── Cisco-Resilient-LAN.PNG
 │   ├── Cisco-Resilient-LAN-Results.PNG
+│   ├── config
+│   │   ├── iosvl2-1.cfg
+│   │   ├── iosvl2-2.cfg
+│   │   └── iosvl2-3.cfg
 │   ├── inventory
 │   │   └── hosts
-│   ├── iosvl2-1.cfg
-│   ├── iosvl2-2.cfg
-│   ├── iosvl2-3.cfg
 │   ├── README.md
-│   └── run.yml
+│   ├── runBackup.yml
+│   └── runBase.yml
 ├── Deploying-kubernetes-on-AWS-using-kops.md
 └── README.md
 
