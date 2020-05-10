@@ -1,5 +1,22 @@
 # Cisco Resilient LAN
 
+```
+Cisco-Resilient-LAN/
+├── base
+│   └── switch.j2
+├── Cisco-Resilient-LAN.PNG
+├── Cisco-Resilient-LAN-Results.PNG
+├── config
+│   ├── iosvl2-1.cfg
+│   ├── iosvl2-2.cfg
+│   └── iosvl2-3.cfg
+├── inventory
+│   └── hosts
+├── README.md
+├── runBackup.yml
+└── runBase.yml
+```
+
 **Table of contents**
 * [Overview](#overview)
 * [Topology](#topology)
